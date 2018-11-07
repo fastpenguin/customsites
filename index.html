@@ -1,102 +1,366 @@
 <!DOCTYPE html>
 <html>
-<title>Sample Site</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Your Link Here</a>
-  </div>
+<head>
+    <style>
+    body {
+        height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+           justify-content:center;
+           background-image:url("https://i.pinimg.com/originals/e0/7a/03/e07a03dce7e337da496fa263ae67ce2e.jpg");
+    background-size: cover;
+    background-position:center bottom;
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Your Link Here</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Your Link Here</a>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Sample Page</h1>
-  <p class="w3-xlarge">Hi!</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Your Text Here</button>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Custom Website</h1>
-      <h5 class="w3-padding-32">Custom Websites, just 25¢ each</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Hi!</h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
- <p>Created by <u>Alastair Calder</u></p>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
     }
+    html, body {margin: 0; height: 100vh; overflow: hidden}
+    html {
+         background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    }
+
+    nav{
+        display:none;
+    }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 20%;
+        }
+
+        .zoom {
+            transition: transform 1s;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 20%;
+        }
+
+        .zoom:hover {
+            transform: scale(1.2);
+        }
+
+        h2,
+        h4,
+        h10 {
+            text-align: center;
+            color: black;
+            font-weight: bolder;
+        }
+
+        * {
+            cursor: url("https://png.icons8.com/nolan/2x/cursor.png") 62 32, pointer
+        }
+
+       #apps {
+           display:flex;
+           align-items: center;
+           justify-content:center;
+           height: 70vh;
+            flex-wrap:wrap;
+             box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.7);
+            margin:10%;
+            margin-top:3%;
+            background-color: rgba(0,0,0, 0.6);
+            flex-grow:1;
+            overflow-y:scroll;
+            user-drag:none
+       }
+
+
+      .appClass {
+           margin:5%;
+           flex-grow: 2;
+       }
+       a {
+           text-decoration:none;
+       }
+        .settings {
+            transition: transform 1s;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 20%;
+            width:5vh;
+            height:5vh;
+        }
+
+        .settings:hover {
+            transform: scale(1.2);
+        }
+       @media only screen and (min-width:800px){
+       button {
+    height:15vw;
+    width:15vw;
+    }
+       }
+              @media only screen and (min-width:1000px){
+       button {
+    height:12vw;
+    width:12vw;
+    }
+              }
+                     @media only screen and (min-width:1300px){
+       button {
+    height:10vw;
+    width:10vw;
+    }}
+      @media only screen and (min-width:1600px){
+       button {
+    height:8vw;
+    width:8vw;
+       }}
+
+/* Style the navbar links */
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -20vh;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
 }
+
+#navbar button {
+    display:none;
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:#ddd;
+  height:10vh;
+}
+
+#navbar button:hover {
+  background-color: #ddd;
+  color: black;
+}
+#navbar img {
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+img {
+    padding:15px;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-fileButton {
+   float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:#ddd;
+  height:6.5vh;
+}
+.custom-fileButton:hover {
+   background-color:#ddd;
+   color:black;
+}
+    </style>
+    <script>
+
+    var showNav = false;
+    function gradient(){
+       document.body.style.backgroundImage = "linear-gradient(to bottom right,#002f4b,#dc4225)"
+    }
+    function image(){
+        document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e0/7a/03/e07a03dce7e337da496fa263ae67ce2e.jpg')"
+   }
+
+        function doMagic(){
+
+            if(showNav == false)
+            {
+                 document.getElementById("navbar").style.top = "0";
+
+                showNav = true;
+
+            }
+            else
+            {
+    document.getElementById("navbar").style.top = "-20vh";
+    showNav = false;
+            }
+
+            //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_slide
+        }
+        
+    
 </script>
 
+    
+
+</head>
+
+<body id="clock">
+    <img draggable="false"  onClick="doMagic()" class="zoom, settings" src="https://freeiconshop.com/wp-content/uploads/edd/settings-var-solid.png">
+    
+    
+    <nav id="navbar">
+        
+        <img draggable="false"  onClick="doMagic()" class="zoom, settings" src="https://freeiconshop.com/wp-content/uploads/edd/settings-var-solid.png">
+         <button onClick="gradient()">gradient</button>
+         <button>
+         <label for="fileButton"  class="custom-fileButton">
+    Custom Upload
+</label></button>
+
+<input id="fileButton" onClick="changeBackground()" type="file"/>
+    <button onClick="image()">image</button>
+    
+    </nav>
+    
+    
+    <section>
+
+    <div id='apps' class="">
+        <div class="appClass">
+        <a href="wandmaker.html">
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src='https://vignette.wikia.nocookie.net/runescape2/images/7/78/Master_wand_detail.png/revision/latest?cb=20130205045931'>
+                    <br>
+                    <h10> Wandmaker </h10>
+
+                </button>
+
+        </a>
+</div>
+<div class="appClass">
+        <a href="hero.html">
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src='http://images.clipartpanda.com/sword-clipart-nicubunu_Toy_Sword.png'>
+                    <br>
+                    <h10> Hero Game </h10>
+
+                </button>
+
+        </a>
+</div>
+<div class="appClass">
+        <a href="spacebar.html">
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src='https://www.clker.com/cliparts/q/x/t/p/D/e/push-button-yellow-glossy-md.png'><br>
+                    <h10> Spacebar Game </h10>
+
+                </button>
+
+        </a>
+        </div>
+<div class="appClass">
+        <a href="calculator.html">
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src="https://cdn1.iconfinder.com/data/icons/lemu-currency/100/calculator_coin_bold_convert-512.png" alt="Image result for money calculator" /><br>
+                    <h10> Calculator </h10>
+
+                </button>
+
+        </a>
+        </div>
+        <div class="appClass">
+        <a href="countdown.html">
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src="https://melbournechapter.net/images/hourglass-clipart-chronometer-7.png"><br>
+                    <h10> Countdown </h10>
+
+                </button>
+
+        </a>
+        </div>
+        <div class="appClass">
+        <a href="chat.html" disabled>
+
+                <button class="zoom" style="background-color:green">
+                    <img draggable="false"  src="fastchatlogo.png"><br>
+                    <h10> FastChat </h10>
+
+                </button>
+
+        </a>
+        </div>
+    </div>
+
+    <!--<a href="photography company.html">
+
+  <div class="gallery, zoom"  style="background-color:green">
+
+  <img draggable="false"  src="https://png.icons8.com/ios/1600/camera.png" alt="Image result for camera png">
+
+  <br>
+<h10>  Sponsored by A&K Photography </h10>
+
+  </div>
+</div>
+</a>-->
+</section>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCAkCS1Xhb_Wdf0e2lw6fHhY3eTsWO923E",
+    authDomain: "fastpenguin-portal.firebaseapp.com",
+    databaseURL: "https://fastpenguin-portal.firebaseio.com",
+    projectId: "fastpenguin-portal",
+    storageBucket: "fastpenguin-portal.appspot.com",
+    messagingSenderId: "348926345273"
+  };
+  firebase.initializeApp(config);
+  
+     var fileButton = document.getElementById('fileButton');
+     var img1 = prompt('hi')
+     fileButton.addEventListener('change',function(e) {
+             var file = e.target.files[0];
+             
+               var storageRef = firebase.storage().ref('images/' + file.name);
+         var task = storageRef.put(file);
+     
+     });
+     function changeBackground() {
+     var storageRef = firebase.storage().ref();
+        storageRef.child('images/' + img1).getDownloadURL().then(function(url) {
+          // `url` is the download URL for 'images/stars.jpg
+        
+          document.body.style.backgroundImage = "url("+ url +")";
+          
+        }).catch(function(error) {
+         alert('There has been an error. A team of highly trained monkeys are on the case.');
+        });
+     }
+     </script>
 </html>
